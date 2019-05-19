@@ -1,0 +1,88 @@
+<div class="page-wrapper chiller-theme toggled">
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-brand">
+        <a class="nav-link" routerLink="/post">Admin Board</a>
+        <div id="close-sidebar">
+          <!-- <i class="fas fa-times"></i> -->
+        </div>
+      </div>
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img
+            class="img-responsive img-rounded"
+            src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+            alt="User picture"
+          />
+        </div>
+        <div class="user-info">
+          <span class="user-name"
+            >Arjun
+            <strong>Pai</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <!-- <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span> -->
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      <!-- <div class="sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!-- sidebar-search  -->
+      <div class="sidebar-menu">
+        <ul class="">
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+          <li routerLinkActive="active" *ngFor="let item of menuItems">
+            <a [routerLink]="[item.path]">
+              <i class="fa fa-book"></i>
+              <span>{{ item.title }}</span>
+            </a>
+          </li>
+          <!-- <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Documentation</span>
+              <span class="badge badge-pill badge-primary">Beta</span>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+    <div class="sidebar-footer">
+        <!-- <a href="#">
+          <i class="fa fa-bell"></i>
+          <span class="badge badge-pill badge-warning notification">3</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          <span class="badge badge-pill badge-success notification">7</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-cog"></i>
+          <span class="badge-sonar"></span>
+        </a> -->
+        <a href="#">
+          <i class="fa fa-power-off"></i>
+        </a>
+      </div>
+  </nav>
+</div>
