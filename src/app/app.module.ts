@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app.routing';
 import { SidebarModule } from './shared/sidebar/sidebar.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from "angularfire2";
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     SidebarModule,
     NavbarModule,
-    FooterModule
+    FooterModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]

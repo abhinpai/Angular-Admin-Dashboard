@@ -22,14 +22,21 @@
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">
-                  {{ (postItem.title.length>40)? (postItem.title | slice:0:40)+'...':(postItem.title) }}
+                {{
+                  postItem.title.length > 40
+                    ? (postItem.title | slice: 0:40) + '...'
+                    : postItem.title
+                }}
               </h5>
               <h6 class="card-subtitle mb-2 text-muted text-right">
                 {{ postItem.category }}
               </h6>
               <p class="card-text">
-                {{ (postItem.description.length>150)? (postItem.description | slice:0:150)+'...':(postItem.description) }}
-                <!-- {{ postItem.description | slice:0:100 }} -->
+                {{
+                  postItem.description.length > 150
+                    ? (postItem.description | slice: 0:150) + '...'
+                    : postItem.description
+                }}
               </p>
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>
@@ -37,7 +44,7 @@
           </div>
         </div>
       </div>
-      <hr class="horizontal-devider">
+      <hr class="horizontal-devider" />
     </div>
   </div>
 </div>
