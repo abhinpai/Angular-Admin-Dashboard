@@ -48,20 +48,10 @@
           </li>
           <li routerLinkActive="active" *ngFor="let item of menuItems">
             <a [routerLink]="[item.path]">
-              <i class="fa fa-book"></i>
+              <i [class]="[item.class]"></i>
               <span>{{ item.title }}</span>
             </a>
           </li>
-          <!-- <li class="header-menu">
-            <span>Extra</span>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-book"></i>
-              <span>Documentation</span>
-              <span class="badge badge-pill badge-primary">Beta</span>
-            </a>
-          </li> -->
         </ul>
       </div>
       <!-- sidebar-menu  -->

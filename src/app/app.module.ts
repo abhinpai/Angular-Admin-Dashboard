@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app.routing';
-import { SidebarModule } from './sidebar/sidebar.module';
+import { SidebarModule } from './shared/sidebar/sidebar.module';
 import { NavbarModule } from './shared/navbar/navbar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { NavbarModule } from './shared/navbar/navbar.module';
     BrowserAnimationsModule,
     FormsModule,
     RouterModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     SidebarModule,
     NavbarModule,
