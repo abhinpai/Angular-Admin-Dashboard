@@ -1,0 +1,43 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row" *ngFor="let post of posts">
+      <div class="section-head">
+        <h4>
+          {{ post.sectionTitle }}
+        </h4>
+        <p class="font-weight-light">
+          {{ post.sectionDescription }}
+          <span class="font-weight-light view-post">
+            <a routerLink="/post">
+              <span>View All</span>
+            </a>
+          </span>
+        </p>
+      </div>
+      <div class="row">
+        <div
+          class="col-lg-4 col-xl-4 col-md-6 col-sm-8"
+          *ngFor="let postItem of post.posts"
+        >
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">
+                  {{ (postItem.title.length>40)? (postItem.title | slice:0:40)+'...':(postItem.title) }}
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted text-right">
+                {{ postItem.category }}
+              </h6>
+              <p class="card-text">
+                {{ (postItem.description.length>150)? (postItem.description | slice:0:150)+'...':(postItem.description) }}
+                <!-- {{ postItem.description | slice:0:100 }} -->
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="horizontal-devider">
+    </div>
+  </div>
+</div>

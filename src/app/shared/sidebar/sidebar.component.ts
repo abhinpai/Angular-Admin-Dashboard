@@ -4,18 +4,17 @@ declare const $: any;
 declare interface RouteInfo {
     path: string;
     title: string;
-    icon: string;
     class: string;
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: '/dashboard', title: 'Dashboard',  icon: 'pe-7s-graph', class: '' },
-    { path: '/notification', title: 'Notification',  icon:'pe-7s-user', class: '' },
-    { path: '/remote-config', title: 'Remote Config',  icon:'pe-7s-note2', class: '' },
-    { path: '/analytics', title: 'Analytics',  icon:'pe-7s-news-paper', class: '' },
-    { path: '/users', title: 'Users',  icon:'pe-7s-science', class: '' },
-    { path: '/feedback', title: 'Feedbacks',  icon:'pe-7s-map-marker', class: '' },
-    { path: '/activity', title: 'Activity Logs',  icon:'pe-7s-bell', class: '' }
+    { path: '/dashboard', title: 'Dashboard',  class: 'fa fa-newspaper-o' },
+    { path: '/notification', title: 'Notification',   class: 'fa fa-bell' },
+    { path: '/remote-config', title: 'Remote Config',   class: 'fa fa-sliders' },
+    { path: '/analytics', title: 'Analytics',   class: 'fa fa-line-chart' },
+    { path: '/users', title: 'Users',   class: 'fa fa-users' },
+    { path: '/activity', title: 'Activity Logs',  class: 'fa fa-info' },
+    { path: '/feedback', title: 'Feedbacks',   class: 'fa fa-edit' }
 ];
 
 @Component({
