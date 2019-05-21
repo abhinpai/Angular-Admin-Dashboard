@@ -1,3 +1,16 @@
 .navbar{
     border-bottom: 0.3px solid #60606069;
 }
+
+.seach-ctrl{
+    margin-left: auto;
+}
+
+.create-btn{
+    padding: 8px;
+    &:hover{
+        border-color: rgba(187, 16, 16, 0.774);
+        color: rgba(187, 16, 16, 0.774);
+        
+    }
+}

@@ -1,7 +1,7 @@
 [
     {
         "sectionTitle": "Application Development",
-        "sectionDescription": "Some descrition about the section",
+        "sectionDescription": "Some description about the section",
         "posts": [
             {
                 "postID": "111",
@@ -103,7 +103,7 @@
     },
     {
         "sectionTitle": "Continious integration and development",
-        "sectionDescription": "Some descrition about the section",
+        "sectionDescription": "Some description about the section",
         "posts": [
             {
                 "postID": "111",
@@ -205,7 +205,7 @@
     },
     {
         "sectionTitle": "Interview Preparation",
-        "sectionDescription": "Some descrition about the section",
+        "sectionDescription": "Some description about the section",
         "posts": [
             {
                 "postID": "111",
