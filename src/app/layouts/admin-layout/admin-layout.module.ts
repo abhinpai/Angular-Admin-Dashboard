@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AdminLayoutRoutes } from './admin-layout.routing';
 import { HomeComponent } from '../../pages/home/home.component';
 import { PostComponent } from 'src/app/pages/post/post.component';
+import { AllPostsComponent } from 'src/app/all-posts/all-posts.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { PostComponent } from 'src/app/pages/post/post.component';
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule
   ],
-  declarations: [HomeComponent, PostComponent]
+  declarations: [HomeComponent, PostComponent, AllPostsComponent]
 })
 export class AdminLayoutModule {}

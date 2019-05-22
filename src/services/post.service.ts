@@ -11,4 +11,8 @@ export class PostService {
  public getPostData(){
     return this.http.get('assets/mocks/postMock.json');
   }
+
+  public getSelectedSectionPosts(){
+    return this.http.get('assets/mocks/postMock.json');
+  }
 }
