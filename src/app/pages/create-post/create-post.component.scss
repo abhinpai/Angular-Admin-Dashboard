@@ -1,0 +1,35 @@
+.main-create-container {
+  padding: 15px;
+  min-height: calc(100% - 123px);
+}
+
+.header {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  border-bottom: 0.1px solid #1b1a1aeb;
+}
+
+.header-btn-grp {
+  float: right;
+  margin-left: auto;
+  display: -webkit-inline-box;
+}
+
+.label {
+  font-size: 26px;
+  font-weight: 200;
+}
+
+.common-margin {
+  margin-left: 12px;
+}
+
+.common-pdding {
+  padding-top: 12px;
+}
+
+.keynote {
+  color: #60606096;
+  font-weight: 100;
+}

@@ -17,8 +17,8 @@
   <a class="navbar-brand" routerLink="/post">Admin Blog Hub</a>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="#"
+      <li class="nav-item active" *ngIf="router == '/dashboard'" >
+        <a class="nav-link" routerLink="/create"
           ><button class="create-btn btn btn-outline-danger">
             <i class="fa fa-plus-circle"></i>
             Create Post

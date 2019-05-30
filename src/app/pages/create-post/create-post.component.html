@@ -1,0 +1,74 @@
+<!-- 
+    <ejs-richtexteditor id='defaultRTE' [(value)]='value' [toolbarSettings]='tools' [quickToolbarSettings]='quickTools'></ejs-richtexteditor>
+
+<button (click)="result()">Test</button> -->
+
+<div class="main-create-container">
+  <div class="header">
+    <p class="label">Create Post</p>
+    <div class="header-btn-grp">
+      <button type="button" class="btn btn-warning btn-sm common-margin ">
+        Preview
+      </button>
+      <div class="dropdown">
+        <a
+          class="btn btn-danger dropdown-toggle btn-sm common-margin "
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Accessiblity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" >Private</a>
+          <a class="dropdown-item" >Public</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group common-pdding">
+    <label for="postTitle">Post Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="postTitle"
+      aria-describedby="emailHelp"
+      placeholder="Enter post title"
+    />
+    <small id="titleHelp" class="form-text text-muted"
+      >This title is helpful to understand about the post.</small
+    >
+  </div>
+
+  <div>
+    <ejs-richtexteditor
+      id="defaultRTE"
+      [(value)]="value"
+      [toolbarSettings]="tools"
+      [quickToolbarSettings]="quickTools"
+    ></ejs-richtexteditor>
+  </div>
+
+  <div class="form-group common-pdding">
+    <label for="keynote"
+      >Keynote
+      <span class="keynote">(Optional)</span>
+    </label>
+    <input
+      type="text"
+      class="form-control"
+      id="keynote"
+      aria-describedby="emailHelp"
+      placeholder="Write Keynote"
+    />
+    <small id="titleHelp" class="form-text text-muted"
+      >Some valuable information to the reader.</small
+    >
+  </div>
+
+</div>
+

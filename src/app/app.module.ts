@@ -12,7 +12,7 @@ import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from "angularfire2";
-
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +28,7 @@ import { AngularFireModule } from "angularfire2";
     SidebarModule,
     NavbarModule,
     FooterModule,
+    RichTextEditorAllModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [],
@@ -35,3 +36,4 @@ import { AngularFireModule } from "angularfire2";
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
+ 
