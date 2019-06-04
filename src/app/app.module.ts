@@ -12,11 +12,15 @@ import { NavbarModule } from './shared/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from "angularfire2";
+import { LoginComponent } from './pages/login/login.component';
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { AuthGuard } from './guards/auth-guard.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,8 +33,9 @@ import { AngularFireModule } from "angularfire2";
     NavbarModule,
     FooterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

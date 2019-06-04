@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="login-div">
+    <div class="login-header">
+      <h2 class="text-center">
+        The Blog Hub
+      </h2>
+    </div>
+    <div class="form-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="Password"
+        />
+      </div>
+      <div class="button-div">
+        <button type="button" class="btn btn-primary">Logina</button>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <button type="button" class="btn btn-outline-primary" (click)="anonymous()">
+            Facebook
+          </button>
+        </div>
+        <div class="col-sm">
+          <button type="button" class="btn btn-outline-danger" (click)="googleLogin()">Google</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
